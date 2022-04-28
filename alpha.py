@@ -21,7 +21,7 @@ x = len(ori_photo)
 
 for i in range(int(x)):
     print('i :', i)
-    img1 = cv2.imread('sig/' + str(i) +'.jpg')
+    img1 = cv2.imread('sig/' + str(ori_photo[i]))
     s_img2 = cv2.imread('ori/'+ str(ori_photo[i]))
 
     gray_img = cv2.cvtColor(s_img2, cv2.COLOR_BGR2GRAY)
